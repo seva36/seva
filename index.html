@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Spin Casino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="casino-floor">
+    <header class="topbar">
+      <a class="brand" href="#game" aria-label="Fruit Spin на головну">
+        <span class="brand-mark">✦</span>
+        <span>FRUIT<br><strong>SPIN</strong></span>
+      </a>
+      <div class="topbar-note"><span class="live-dot"></span> DEMO TABLE</div>
+    </header>
+
+    <section class="game-layout" id="game" aria-labelledby="game-title">
+      <div class="game-copy">
+        <p class="eyebrow">Lucky machine · 001</p>
+        <h1 id="game-title">Піймай свій <em>солодкий</em> джекпот</h1>
+        <p class="intro">Потягни за важіль і подивись, які фрукти сховалися за склом.</p>
+        <div class="jackpot-label">ПРИЗОВИЙ БАНК <strong id="jackpot">2 450</strong></div>
+      </div>
+
+      <div class="machine-area">
+        <div class="machine-glow"></div>
+        <div class="slot-machine" aria-label="Ігровий автомат">
+          <div class="machine-header">
+            <span>★</span>
+            <h2>FRUIT SPIN</h2>
+            <span>★</span>
+          </div>
+          <div class="reels-frame">
+            <div class="reel" id="reel-0">🍒</div>
+            <div class="reel" id="reel-1">🍋</div>
+            <div class="reel" id="reel-2">🍊</div>
+          </div>
+          <div class="machine-message" id="status" aria-live="polite">Потягни за важіль, щоб почати</div>
+          <div class="machine-base"></div>
+        </div>
+
+        <button class="lever" id="lever" type="button" aria-label="Потягнути за важіль">
+          <span class="lever-ball"></span>
+          <span class="lever-stick"></span>
+          <span class="lever-label">SPIN</span>
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer-note">Гра для розваги · без реальних ставок</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
